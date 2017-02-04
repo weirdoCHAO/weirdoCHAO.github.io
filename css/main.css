@@ -1024,7 +1024,8 @@ pre .javascript .function {
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
   color: #ddd;
 }
 .use-motion .brand {
@@ -1143,7 +1144,7 @@ pre .javascript .function {
   transform: rotate(30deg);
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1372,10 +1373,10 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 30px 0;
   color: #999;
   font-family: 'Microsoft YaHei', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
@@ -1687,7 +1688,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0b34;
+  background: #75815e;
 }
 .links-of-blogroll {
   font-size: 13px;
