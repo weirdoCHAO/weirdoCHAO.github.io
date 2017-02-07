@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[About 2017]]></title>
+      <url>%2F2017%2F02%2F07%2FAbout2017%2F</url>
+      <content type="text"><![CDATA[关于2017时间就这么快，年就这样的过完了，而我的2017也这样开始着。在这里也该为这一年做个打算。 关于前端作为一个新人，对于发生在2016年前端的一些事曾在社区里看过，总得感觉前端的发展好快，各种新的技术，各种新的想法，让我越来越喜欢前端，或者说是让我很好奇它，我想着当我真的熟悉使用那些技术而会做些什么呢？前端，一个神奇的技术领域。2016年当把”Javascript 高级程序设计”看了一遍，我就是在想Javescript能做些什么？ 事件的监听和操作 做动画，虽然已经有了CSS3，但还能用在做帧动画。 canvas的操作 设备的识别 数据的提交和验证 控制cookie 所以当这一遍看完，我总觉得为什么 Javascript 并不是那么的优秀，但整个前端却又不能少了它。所以在2017，我想好好研究它，想深入的学习和掌握它。我觉的当js使用熟悉后，jq会学起来更轻松些，这也在不断学习中。 在2017里计划学习 React.js Sass 前端自动化 如果可以再学学Photoshop 关于实习2017年底，自己也就可以实习了，会很期待，所以想要努力做好自己想要做的，然后找到一份好工作。会很激动，自己会拿到人生的第一桶金，然后真正的自己独立。自己很好奇后端数据和前端页面到底是怎么相互传递的，所以自己的前端路还有着很长一段路需要我去踩点和学习。 2017，一个开始，一个结束。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hello HEXO(二)]]></title>
       <url>%2F2017%2F01%2F31%2Fhello-hexo-2%2F</url>
       <content type="text"><![CDATA[当你的blog成功上传至仓库，剩下主要的问题就是配置一些个性化的主题项和功能项。现在我们就开始吧！ 主题配置（NexT） 首先下载你喜欢的主题至你的themes文件夹下，可以在git bash里clone，或者直接在github里直接下载压缩包。（个人建议，直接在github上下载，不会太费时间） 打开themes下的_config.yml，有着很多的配置，我会尽可能的详细。 Logo的设置 通过在线icon制作一个favicon.ico 将其保存在将图片放在next主题source/images目录下 favicon: images/favicon.ico 头像的设置 在主题_config里设置avatar: 的值。其值设置成头像的链接地址。 第三方服务例如：多说评论、不蒜子统计、站内搜索，分享…. 多说使用多说前需要先在 多说 创建一个站点。具体步骤如下： 登录后在首页选择 “我要安装”。创建站点，填写表单。多说域名 这一栏填写的即是你的 duoshuo_shortname，如图： 创建站点完成后在 站点配置文件 中新增 duoshuo_shortname 字段，值设置成上一步中的值。 详细教程点这里 不蒜子统计两行代码轻松解决，参考不蒜子 404页面腾讯公益 404.html : &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;404&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;br&gt;&lt;!-- &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;title&gt;公益404 | 不如&lt;/title&gt; &lt;/head&gt; &lt;body&gt; #404 Not found By Bruce &lt;h1&gt;404 Page Not Found&lt;/h1&gt; --&gt;&lt;br&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;br&gt;&lt;!-- 公益404介接入地址 益云公益404 http://yibo.iyiyun.com/Index/web404 腾讯公益404 http://www.qq.com/404 失蹤兒童少年資料管理中心404 http://404page.missingkids.org.tw --&gt; &lt;br&gt; &lt;/body&gt; &lt;/html&gt; 复制上面代码，贴粘到主题目录source下新建的404.html即可！ 添加about页面hexo new page “about”在source文件夹下就会有about文件夹，编辑index.md，然后进入主题的_config.yml中，menu下的#about注释去掉 添加tag/categories页面hexo new page &quot;tags&quot;hexo new page &quot;categories&quot;设置同上，调整菜单顺序。 总结关于HEXO建站，有很多教程，还有很多方面需要你自己研究尝试。总得来说，我在，我开心。也算是自己的一个尝试。 推荐文章玩转hexo博客之nextNexT官方文档Hexo 优化与定制(二)NexT主题的Hexo优化（SEO篇）]]></content>
