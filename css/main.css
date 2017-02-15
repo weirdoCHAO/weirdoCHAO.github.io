@@ -986,7 +986,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: #402;
 }
 .site-meta {
   margin: 0;
@@ -1024,9 +1024,10 @@ pre .javascript .function {
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 4px;
   font-family: Microsoft YaHei;
-  color: #ddd;
+  color: #fff;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1148,7 +1149,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .posts-expand {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .post-body pre,
   .post-body .highlight {
@@ -1419,7 +1420,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .posts-expand .post-comments-count {
-    display: none;
+    display: inline-block;
   }
 }
 .post-more-link {
@@ -1427,7 +1428,7 @@ pre .javascript .function {
 }
 .post-more-link .btn {
   color: #555;
-  font-size: 14px;
+  font-size: 15px;
   background: #fff;
   border-radius: 2px;
   line-height: 2;
@@ -1688,7 +1689,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7dffdd;
+  background: #446a7d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2618,7 +2619,7 @@ a.search-result {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
+  background: #0ea5b9;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2697,7 +2698,7 @@ a.search-result {
   background-color: #fff;
 }
 .site-nav-toggle {
-  left: 20px;
+  left: 86%;
   top: 50%;
   top: calc(50% - 3px);
   -webkit-transform: translateY(-50%);
@@ -2851,4 +2852,10 @@ a.search-result {
   .post-body {
     text-align: justify;
   }
+}
+.post-body .post-button .btn {
+  font-size: 15px;
+  background: #f14b3f;
+  border: none;
+  border-radius: 5px;
 }
