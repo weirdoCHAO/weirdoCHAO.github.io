@@ -447,6 +447,7 @@ td {
 html,
 body {
   height: 100%;
+  font-size: 15px;
 }
 .container {
   position: relative;
@@ -967,12 +968,12 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .back-to-top {
-    display: none;
+    display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
-    display: none;
+    display: block;
   }
 }
 .back-to-top.back-to-top-on {
@@ -1020,7 +1021,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 25px;
   font-weight: normal;
-  font-family: 'Lobster Two', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'PingFang SC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1428,7 +1429,7 @@ pre .javascript .function {
 }
 .post-more-link .btn {
   color: #555;
-  font-size: 15px;
+  font-size: 14px;
   background: #fff;
   border-radius: 2px;
   line-height: 2;
@@ -1689,7 +1690,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #446a7d;
+  background: #b511c7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2512,12 +2513,12 @@ a.search-result {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 @media (max-width: 767px) {
   .main {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 }
 .container .main-inner {
@@ -2536,7 +2537,7 @@ a.search-result {
 .content-wrap {
   float: right;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 40px 20px;
   width: 700px;
   background: #fff;
   min-height: 700px;
@@ -2553,7 +2554,7 @@ a.search-result {
 @media (max-width: 767px) {
   .content-wrap {
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     min-height: auto;
     border-radius: initial;
   }
@@ -2582,11 +2583,9 @@ a.search-result {
 .footer-inner {
   width: 960px;
 }
-.footer-inner:before {
-  content: " ";
-  float: left;
-  width: 260px;
-  min-height: 50px;
+.footer-inner .busuanzi::after {
+  content: "|";
+  padding-left: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-inner {
@@ -2854,7 +2853,7 @@ a.search-result {
   }
 }
 .post-body .post-button .btn {
-  font-size: 15px;
+  font-size: 14px;
   background: #f14b3f;
   border: none;
   border-radius: 5px;
