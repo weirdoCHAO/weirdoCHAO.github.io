@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}	
+
+		.clearfix:after,.clearfix:before{
+			content:"";
+			display: table;
+
+		}
+		.clearfix:after{
+			clear:none;
+		}
+
+		header{
+			background-color: #2F9C8E;
+			padding:10px 0;
+		}
+		
+		header h2{
+			position:relative;
+			text-decoration: none;
+			display:block;
+			margin-top:10px 0;
+			font-size: 36px;
+			color:#fff;
+			text-align:center;
+		}
+
+		.container{
+			display:block;
+			width:100%;
+			background-color:#F57C7C;
+		}
+
+		.item-box{
+			width: 60%;
+			height:100%;
+			margin:0 auto;
+		}
+
+		.content p{
+			font-size: 20px;
+			padding:20px 0;
+			text-align:center;
+		}
+
+		.stars {
+			width:100%;
+		 	unicode-bidi: bidi-override;
+		 	direction: rtl;
+			text-align: center;
+		}
+
+		.stars > span {
+			  display: inline-block;
+			  position: relative;
+			  width: 1.1em;
+			  font-size: 30px;
+			  color:#FFF310;
+		}
+
+		.stars > span:hover:before,
+		.stars > span:hover ~ span:before {
+		   content: "\2605";
+		   position: absolute;
+		}
+		
+		.direction{
+			display:block;
+			height:66px;
+			margin-top:30px;
+		}	
+
+		.box-con{
+			display: block;
+			width:260px;
+			margin:0 auto;
+		}
+
+		.box-con .box{
+			float:left;
+			position: relative;
+			height: 40px;
+			width:40px;
+			background-color: #fff;
+			border:2px dotted #343333;
+			margin:10px 20px 0 0;
+		}
+
+		.n>i{
+		    width: 0;
+		    height: 0;
+		    border: 20px solid #9C27B0;
+		    border-color: transparent transparent #27F2B2 transparent;
+		    position: absolute;
+		    left: 50%;
+		    margin-left: -20px;
+	}
+
+	.s>i{
+		    width: 0;
+		    height: 0;
+		    border: 20px solid #9C27B0;
+		    border-color:#27F2B2 transparent transparent  transparent;
+		    position: absolute;
+		    left: 50%;
+		    top:50%;
+		    margin-top: -20px;
+		    margin-left: -20px;
+	}
+
+	.l>i{
+		    width: 0;
+		    height: 0;
+		    border: 20px solid #9C27B0;
+		    border-color: transparent transparent transparent #27F2B2;
+		    position: absolute;
+		    left: 50%;
+		    top:50%;
+		    margin-top: -20px;
+		    margin-left: -20px;
+	}
+
+	.r>i{
+		    width: 0;
+		    height: 0;
+		    border: 20px solid #9C27B0;
+		    border-color: transparent #27F2B2 transparent  transparent;
+		    position: absolute;
+		    left: 50%;
+		    top:50%;
+		    margin-top: -20px;
+		    margin-left: -20px;
+	}
+	
+	.shadow-border{
+			width:auto;
+			height:200px;
+			margin-top:30px;
+			
+	}
+
+	.box-border{
+		width:100px;
+		height:100px;
+		text-align: center;
+		line-height: 100px;
+		margin: 10px 20px 0 20px;
+		float:left;
+		background-color: #C5E91A;
+		border:1px solid #ccc;
+		
+	}
+	
+	.shadow-border>*{
+		display: inline-block;
+	}
+	.inform{
+		width:200px;
+		height:100px;
+		float:left;
+	}
+
+	.inform aside{
+		display:block;
+		text-align: left;
+		font-size:20px;
+		margin-top:10px;
+		
+	}
+
+	#n_{
+		box-shadow:0 -5px  15px red ;
+	}
+	#s_{
+		box-shadow:0 5px  15px red ;
+	}
+	#l_{
+		box-shadow:-5px 0 15px red ;
+	}
+	#r_{
+		box-shadow:5px 0 15px red ;
+	}
+
+	.cutfont{
+		padding:20px 10px;
+		font-size:17px;
+	}
+
+	.cutfont a{
+		display: block;
+		text-decoration: none;
+		color:#ccc;
+		width:700px;
+		white-space:nowrap; 
+	   	overflow:hidden; 
+	   	text-overflow: ellipsis;
+	}
+	
+	footer{
+		text-align:center;
+		font-size:22px;
+		padding:20px 0;
+	}
+	
+	</style>
+		
+</head>
+<body>
+	<header>
+		<h2>CSS使用的技巧（一）</h2>
+	</header>
+	<div class="container">
+		<div class="item-box">
+			<!-- 文章内容 -->
+			<div class="content">
+				<p>	
+					CSS是前端的基础知识，很容易学，但它却很难学透。<br>
+					本篇博文会介绍关于CSS的一些有趣的地方。
+				</p>
+			</div>
+			<!-- css实现点赞 -->
+			<div class="stars">
+				<span>☆</span>
+				<span>☆</span>
+				<span>☆</span>
+				<span>☆</span>
+				<span>☆</span>
+			</div>
+			<!-- 制作方向头 -->
+			<div class="direction">
+				<div class="box-con">
+					<div class="box n"><i></i></div>
+					<div class="box s"><i></i></div>
+					<div class="box l"><i></i></div>
+					<div class="box r"><i></i></div>
+				</div>
+				
+			</div>
+			<!-- border-shadow  -->
+			<div class="shadow-border ">
+				<div id="n_" class="box-border">向上偏移</div>
+				<div id="s_" class="box-border">向下偏移</div>
+				<div id="l_" class="box-border">向左偏移</div>
+				<div id="r_" class="box-border">向右偏移</div>
+			</div>
+			<div class="cutfont">
+				<a href="/">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error ad molestiae animi ipsam dolore soluta, laboriosam nisi odio alias distinctio delectus quisquam modi culpa, adipisci quas est, assumenda quidem.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error ad molestiae animi ipsam dolore soluta, laboriosam nisi odio alias distinctio delectus quisquam modi culpa, adipisci quas est, assumenda quidem.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error ad molestiae animi ipsam dolore soluta, laboriosam nisi odio alias distinctio delectus quisquam modi culpa, adipisci quas est, assumenda quidem.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error ad molestiae animi ipsam dolore soluta, laboriosam nisi odio alias distinctio delectus quisquam modi culpa, adipisci quas est, assumenda quidem.</a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		本页仅作为demo展示
+	</footer>
+</body>
+</html>
